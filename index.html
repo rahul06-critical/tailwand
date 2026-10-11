@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusKart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-sky-50 text-slate-800 font-sans">
+
+  <!-- NAVBAR (sticky, glassy) -->
+  <nav class="sticky top-0 z-50 flex justify-between items-center bg-sky-950/90 backdrop-blur text-white px-6 py-3 shadow-lg">
+    <h1 class="text-xl font-extrabold tracking-tight">Campus<span class="text-rose-400">Kart</span></h1>
+    <div class="flex items-center gap-4 text-sm">
+      <a href="#products" class="hover:text-rose-400 transition-colors">Shop</a>
+      <a href="#" class="bg-rose-400 text-sky-950 font-semibold px-3 py-1 rounded-full hover:bg-rose-300 transition-colors">Cart (0)</a>
+    </div>
+  </nav>
+
+  <!-- SALE BANNER (background image + gradient overlay) -->
+  <header class="bg-[url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600')] bg-cover bg-center">
+    <div class="bg-gradient-to-r from-sky-950/95 via-sky-900/80 to-sky-700/40 text-white">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-6 py-20 text-center md:text-left">
+        <div>
+          <p class="inline-block bg-white/10 ring-1 ring-white/30 text-xs px-3 py-1 rounded-full">Back to campus deals</p>
+          <h2 class="mt-4 text-5xl md:text-6xl font-black tracking-tight">College Sale</h2>
+          <p class="mt-3 text-sky-100">Up to 50% off on bags, books and more</p>
+          <a href="#products" class="inline-block mt-6 bg-rose-400 text-sky-950 font-bold text-sm px-6 py-3 rounded-full shadow-lg hover:bg-rose-300 hover:-translate-y-0.5 active:scale-95 transition">Shop Now</a>
+        </div>
+        <div class="w-52 h-52 flex flex-col items-center justify-center bg-gradient-to-br from-rose-300 to-rose-500 text-sky-950 rounded-3xl shadow-2xl rotate-6 hover:rotate-0 transition-transform duration-300">
+          <span class="text-5xl font-black">50%</span>
+          <span class="text-xl font-extrabold">OFF</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- WHY SHOP WITH US -->
+  <section class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 px-6 py-8">
+    <div class="bg-white text-center rounded-xl shadow-sm py-4 border-b-4 border-sky-500 hover:shadow-md transition-shadow">
+      <p class="text-2xl"></p>
+      <p class="font-bold text-sky-700">Free</p>
+      <p class="text-sm text-slate-500">Delivery</p>
+    </div>
+    <div class="bg-white text-center rounded-xl shadow-sm py-4 border-b-4 border-rose-400 hover:shadow-md transition-shadow">
+      <p class="text-2xl"></p>
+      <p class="font-bold text-sky-700">7-Day</p>
+      <p class="text-sm text-slate-500">Returns</p>
+    </div>
+    <div class="bg-white text-center rounded-xl shadow-sm py-4 border-b-4 border-sky-500 hover:shadow-md transition-shadow">
+      <p class="text-2xl"></p>
+      <p class="font-bold text-sky-700">COD</p>
+      <p class="text-sm text-slate-500">Available</p>
+    </div>
+  </section>
+
+  <h2 class="max-w-6xl mx-auto px-6 text-2xl font-extrabold text-sky-900">Trending on campus</h2>
+
+  <!-- PRODUCTS: 1 / 2 / 4 per row -->
+  <section id="products" class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-6">
+
+    <div class="relative bg-white rounded-2xl shadow p-4 hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+      <span class="absolute top-6 left-6 bg-rose-500 text-white text-xs font-bold px-2 py-1 rounded-full">-38%</span>
+      <img src="images/backpack.jpg" alt="Backpack" loading="lazy" decoding="async" class="w-full h-40 object-cover bg-sky-100 rounded-xl">
+      <h3 class="mt-3 text-sm font-semibold">Backpack</h3>
+      <p class="text-sm font-semibold">Rs. 799 <span class="line-through text-slate-400 font-normal">1299</span></p>
+      <button class="w-full mt-3 bg-sky-600 text-white text-sm font-semibold py-2 rounded-lg hover:bg-rose-500 active:scale-95 transition">Add to Cart</button>
+    </div>
+
+    <div class="relative bg-white rounded-2xl shadow p-4 hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+      <span class="absolute top-6 left-6 bg-rose-500 text-white text-xs font-bold px-2 py-1 rounded-full">-33%</span>
+      <img src="images/notebook-set.jpg" alt="Notebook Set" loading="lazy" decoding="async" class="w-full h-40 object-cover bg-sky-100 rounded-xl">
+      <h3 class="mt-3 text-sm font-semibold">Notebook Set</h3>
+      <p class="text-sm font-semibold">Rs. 199 <span class="line-through text-slate-400 font-normal">299</span></p>
+      <button class="w-full mt-3 bg-sky-600 text-white text-sm font-semibold py-2 rounded-lg hover:bg-rose-500 active:scale-95 transition">Add to Cart</button>
+    </div>
+
+    <div class="relative bg-white rounded-2xl shadow p-4 hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+      <span class="absolute top-6 left-6 bg-rose-500 text-white text-xs font-bold px-2 py-1 rounded-full">-30%</span>
+      <img src="images/water-bottle.jpg" alt="Water Bottle" loading="lazy" decoding="async" class="w-full h-40 object-cover bg-sky-100 rounded-xl">
+      <h3 class="mt-3 text-sm font-semibold">Water Bottle</h3>
+      <p class="text-sm font-semibold">Rs. 349 <span class="line-through text-slate-400 font-normal">499</span></p>
+      <button class="w-full mt-3 bg-sky-600 text-white text-sm font-semibold py-2 rounded-lg hover:bg-rose-500 active:scale-95 transition">Add to Cart</button>
+    </div>
+
+    <div class="relative bg-white rounded-2xl shadow p-4 hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+      <span class="absolute top-6 left-6 bg-rose-500 text-white text-xs font-bold px-2 py-1 rounded-full">-40%</span>
+      <img src="images/earphones.jpg" alt="Earphones" loading="lazy" decoding="async" class="w-full h-40 object-cover bg-sky-100 rounded-xl">
+      <h3 class="mt-3 text-sm font-semibold">Earphones</h3>
+      <p class="text-sm font-semibold">Rs. 599 <span class="line-through text-slate-400 font-normal">999</span></p>
+      <button class="w-full mt-3 bg-sky-600 text-white text-sm font-semibold py-2 rounded-lg hover:bg-rose-500 active:scale-95 transition">Add to Cart</button>
+    </div>
+
+    <div class="relative bg-white rounded-2xl shadow p-4 hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+      <span class="absolute top-6 left-6 bg-rose-500 text-white text-xs font-bold px-2 py-1 rounded-full">-36%</span>
+      <img src="images/scientific-calculator.jpg" alt="Scientific Calculator" loading="lazy" decoding="async" class="w-full h-40 object-cover bg-sky-100 rounded-xl">
+      <h3 class="mt-3 text-sm font-semibold">Scientific Calculator</h3>
+      <p class="text-sm font-semibold">Rs. 449 <span class="line-through text-slate-400 font-normal">699</span></p>
+      <button class="w-full mt-3 bg-sky-600 text-white text-sm font-semibold py-2 rounded-lg hover:bg-rose-500 active:scale-95 transition">Add to Cart</button>
+    </div>
+
+    <div class="relative bg-white rounded-2xl shadow p-4 hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+      <span class="absolute top-6 left-6 bg-rose-500 text-white text-xs font-bold px-2 py-1 rounded-full">-39%</span>
+      <img src="images/desk-lamp.jpg" alt="Desk Lamp" loading="lazy" decoding="async" class="w-full h-40 object-cover bg-sky-100 rounded-xl">
+      <h3 class="mt-3 text-sm font-semibold">Desk Lamp</h3>
+      <p class="text-sm font-semibold">Rs. 549 <span class="line-through text-slate-400 font-normal">899</span></p>
+      <button class="w-full mt-3 bg-sky-600 text-white text-sm font-semibold py-2 rounded-lg hover:bg-rose-500 active:scale-95 transition">Add to Cart</button>
+    </div>
+
+    <div class="relative bg-white rounded-2xl shadow p-4 hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+      <span class="absolute top-6 left-6 bg-rose-500 text-white text-xs font-bold px-2 py-1 rounded-full">-39%</span>
+      <img src="images/pen-drive.jpg" alt="64GB Pen Drive" loading="lazy" decoding="async" class="w-full h-40 object-cover bg-sky-100 rounded-xl">
+      <h3 class="mt-3 text-sm font-semibold">64GB Pen Drive</h3>
+      <p class="text-sm font-semibold">Rs. 399 <span class="line-through text-slate-400 font-normal">650</span></p>
+      <button class="w-full mt-3 bg-sky-600 text-white text-sm font-semibold py-2 rounded-lg hover:bg-rose-500 active:scale-95 transition">Add to Cart</button>
+    </div>
+
+    <div class="relative bg-white rounded-2xl shadow p-4 hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+      <span class="absolute top-6 left-6 bg-rose-500 text-white text-xs font-bold px-2 py-1 rounded-full">-38%</span>
+      <img src="images/college-hoodie.jpg" alt="College Hoodie" loading="lazy" decoding="async" class="w-full h-40 object-cover bg-sky-100 rounded-xl">
+      <h3 class="mt-3 text-sm font-semibold">College Hoodie</h3>
+      <p class="text-sm font-semibold">Rs. 999 <span class="line-through text-slate-400 font-normal">1599</span></p>
+      <button class="w-full mt-3 bg-sky-600 text-white text-sm font-semibold py-2 rounded-lg hover:bg-rose-500 active:scale-95 transition">Add to Cart</button>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-sky-950 text-sky-100 text-center text-xs py-6 mt-8 border-t-4 border-rose-400">
+    <p>&copy; 2026 CampusKart</p>
+    <div class="mt-2 flex justify-center gap-4">
+      <a href="#" class="hover:text-rose-400 transition-colors">About</a>
+      <a href="#" class="hover:text-rose-400 transition-colors">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
